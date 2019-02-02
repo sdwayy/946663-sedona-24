@@ -7,8 +7,8 @@
   <body>
     <header class="page-header">
      <nav class="main-nav">
-        <a class="header-logo">
-         <img src="img/logo-sedona.svg" width="140" height="71" alt="Sedona logo">
+        <a class="header-logo" href="index.html" aria-label="Вернуться на главную страницу">
+         <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Cедоны">
         </a>
         <ul class="site-navigatiom">
           <li><a href="#">Информация</a></li>
@@ -19,48 +19,89 @@
       </nav>
     </header>
     <main class="container">
-      <!--
       <section class="hotel-filter">
       <h1 class="visually-hidden">Выбор гостиницы</h1>
-      <form>
+      <form class="hotel-filter-form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="pool" id="filter-pool" checked>
+              <label for="filter-pool">Бассейн</label>
+            </li>
+            <li>
+              <input type="checkbox" name="parking" id="filter-parking">
+              <label for="filter-parking">Парковка</label>
+            </li>
+            <li>
+              <input type="checkbox" name="wi-fi" id="filter-wi-fi">
+              <label for="filter-wi-fi">Wi-fi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="hotel" id="filter-hotel" checked>
+              <label for="filter-hotel">Гостиница</label>
+            </li>
+            <li>
+              <input type="checkbox" name="motel" id="filter-motel" checked>
+              <label for="filter-motel">Мотель</label>
+            </li>
+            <li>
+              <input type="checkbox" name="apartments" id="filter-apartments" checked>
+              <label for="filter-apartments">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Стоимость в сутки (р):</legend>
+            <label for="p-range">
+                <span>от 0</span>
+                <span>до 3000</span>
+            </label>
+          <input type="range" name="price-range" id="p-range" min="0" max="3000" value="2500">
+        </fieldset>
+        <button type="submit">Показать</button>
       </form>
       </section>
-      -->
       <section class="hotel-list">
         <ul class="unit-list">
           <li>
             <h3>Amara resort & spa</h3>
-            <img src="img/Amara.jpg" width="135" height="90" alt="Amara resort">
-            <span class="Hotel-type">Гостиница</span>
+            <img src="img/amara.jpg" width="135" height="90" alt="Гостиница Amara resort & spa">
+            <span class="hotel-type">Гостиница</span>
             <span class="price">От 4000 Р.</span>
             <a class="btn-info" href="#">Подробнее</a>
             <a class="btn-reg" href="#">Забронировать</a>
             <p class="hotel-grade">
-              <img src="img/star.svg" width="18" height="17" alt="4 stars">
+              <img src="img/star.svg" width="18" height="17" alt="4 звезды">
               <span class="rating">Рейтинг: 8,5</span>
             </p>
           </li>
           <li>
           <h3>Desert Quail inn</h3>
-            <img src="img/Desert.jpg" width="135" height="90" alt="Desert Quail">
-            <span class="Hotel-type">Мотель</span>
+            <img src="img/desert.jpg" width="135" height="90" alt="Мотель Desert Quail inn ">
+            <span class="hotel-type">Мотель</span>
             <span class="price">От 3000 Р.</span>
             <a class="btn-info" href="#">Подробнее</a>
             <a class="btn-reg" href="#">Забронировать</a>
             <p class="hotel-grade">
-              <img src="img/star.svg" width="18" height="17" alt="3 stars">
+              <img src="img/star.svg" width="18" height="17" alt="3 звезды">
               <span class="rating">Рейтинг: 8,9</span>
             </p>
           </li>
           <li>
             <h3>Villas at poco diablo</h3>
-            <img src="img/Villas.jpg" width="135" height="90" alt="Villas at poco diablo">
-            <span class="Hotel-type">Апартаменты</span>
+            <img src="img/villas.jpg" width="135" height="90" alt="Апартаменты Villas at poco diablo">
+            <span class="hotel-type">Апартаменты</span>
             <span class="price">От 2000 Р.</span>
             <a class="btn-info" href="#">Подробнее</a>
             <a class="btn-reg" href="#">Забронировать</a>
             <p class="hotel-grade">
-              <img src="img/star.svg" width="18" height="17" alt="2 stars">
+              <img src="img/star.svg" width="18" height="17" alt="2 звезды">
               <span class="rating">Рейтинг: 9,2</span>
             </p>
           </li>
@@ -73,25 +114,25 @@
         <ul>
          <li>
             <a class="social-button" href="#">
-              <img src="img/twitter.svg" width="17" height="15" alt="Twitter">
+              <img src="img/twitter.svg" width="17" height="15" alt="Наш аккаунт в Твиттере">
            </a>
          </li>
           <li>
             <a class="social-button" href="#">
-              <img src="img/fb-icon.svg" width="12" height="22" alt="Facebook">
+              <img src="img/fb-icon.svg" width="12" height="22" alt="Мы в Фейсбуке">
             </a>
           </li>
           <li>
             <a class="social-button" href="#">
-              <img src="img/youtube.svg" width="20" height="16" alt="Youtube">
+              <img src="img/youtube.svg" width="20" height="16" alt="Наш канал на Ютубе">
             </a>
           </li>
        </ul>
       </div>
        <div class="footer-copyright">
         <b>Website by</b>
-        <a class="copyright-logo" href="https://htmlacademy.ru">
-         <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Html academy logo">
+        <a class="copyright-logo" href="https://htmlacademy.ru" aria-label="Перейти на сайт HTML Академии">
+         <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML академии">
         </a>
        </div>
     </footer>

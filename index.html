@@ -7,10 +7,10 @@
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <a class="header-logo">
-         <img src="img/logo-sedona.svg" width="140" height="71" alt="Sedona logo">
+        <a class="header-logo" href="index.html">
+         <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Седоны">
         </a>
-        <ul class="site-navigatiom">
+        <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
@@ -19,8 +19,8 @@
       </nav>
     </header>
     <main class="container">
-      <img src="img/intro-welcome.svg" width="459" height="353" alt="Welcome to the Sedona">
       <h1 class="visually-hidden">Sedona</h1>
+      <img src="img/intro-welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">
         <strong class="slogan">
           Седона-небольшой городок в Аризоне,
           <br>
@@ -29,15 +29,100 @@
       <section class="advantages">
         <h2 class="visually-hidden">Наши преимущества</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        <!--advantages list-->
+        <ul class="reasons-list">
+          <li class="first-reason">
+            <h3>Настоящий городок</h3>
+            <span>-№1-</span>
+            <p>
+              Седона-не атракцион для туристов, там течёт своя жизнь
+            </p>
+            <img src="img/index-town-photo.jpg" width="800" height="256" alt="Панорама Седоны">
+            <ul class="town-merits">
+              <li>
+                <img src="img/housing.svg" width="75" height="72" alt="housing icon">
+                <h4>Жильё</h4>
+                <p>
+                 Рекомендуем пожить в настоящем мотеле, всё как в кино!
+                </p>
+              </li>
+              <li>
+                <img src="img/food.svg" width="74" height="70" alt="food icon">
+                <h4>Еда</h4>
+                <p>
+                 Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+                </p>
+              </li>
+              <li>
+                <img src="img/souvenir.svg" width="64" height="76" alt="souvenir icon">
+                <h4>Сувениры</h4>
+                <p>
+                 Не только китайского, но и местного производства!
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="second-reason">
+            <h3>Там есть мост дьявола</h3>
+            <span>-№2-</span>
+            <p>
+              Да, по нему можно пройти! Если конечно вы осмелитесь
+            </p>
+            <img src="img/index-devil-bridge.jpg" width="800" height="256" alt="Панорама моста дьявола">
+          </li>
+          <li>
+            <h3>Небольшая площадь</h3>
+            <span>-№3-</span>
+            <p>
+              Все достопримечательности находятся очень близко
+            </p>
+          </li>
+          <li>
+            <h3>Красивая дорога</h3>
+            <span>-№4-</span>
+            <p>
+              Ехать в седону из Лас-Вегаса совсем не скучно!
+            </p>
+          </li>
+          <li>
+            <h3>Мало туристов</h3>
+            <span>-№5-</span>
+            <p>
+              Большинство едет в Гранд-Каньон и толпится там
+            </p>
+          </li>
+        </ul>
       </section>
       <section class="check-in">
-        <h2 class="visually-hidden">Забронировать</h2>
+        <h2 class="visually-hidden">Забронировать отель</h2>
         <p>
           <b>Заинтересовались?</b>
-        Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне.
+          <br>
+           Укажите предполагаемые даты поездки,
+          <br>
+           и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <!-- form -->
+        <h3>Поиск гостиницы в Седоне</h3>
+        <form class="check-in-form" action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label for="arrival-date">Дата заезда:</label>
+            <input type="text" name="arrival-date" id="arrival-date" placeholder="24 апреля 2017" required>
+            <img src="img/calendar.svg" width="21" height="22" alt="calendar icon">
+          </p>
+          <p>
+            <label for="date-departure">Дата выезда:</label>
+            <input type="text" name="date-departure" id="date-departure" placeholder="4 июля 2017" required>
+            <img src="img/calendar.svg" width="21" height="22" alt="calendar icon">
+          </p>
+          <p>
+            <label for="adults">Взрослые:</label>
+            <input type="number" name="adults" id="adults" value="2">
+          </p>
+          <p>
+            <label for="kids">Дети:</label>
+            <input type="number" name="kids" id="kids" value="0">
+          </p>
+          <button type="submit">Найти</button>
+        </form>
       </section>
     </main>
     <footer class="page-footer">
@@ -46,25 +131,25 @@
         <ul>
          <li>
             <a class="social-button" href="#">
-              <img src="img/twitter.svg" width="17" height="15" alt="Twitter">
+              <img src="img/twitter.svg" width="17" height="15" alt="Наш аккаунт в Твиттере">
            </a>
          </li>
           <li>
             <a class="social-button" href="#">
-              <img src="img/fb-icon.svg" width="12" height="22" alt="Facebook">
+              <img src="img/fb-icon.svg" width="12" height="22" alt="Мы в Фейсбуке">
             </a>
           </li>
           <li>
             <a class="social-button" href="#">
-              <img src="img/youtube.svg" width="20" height="16" alt="Youtube">
+              <img src="img/youtube.svg" width="20" height="16" alt="Наш канал на Ютубе">
             </a>
           </li>
        </ul>
       </div>
        <div class="footer-copyright">
         <b>Website by</b>
-        <a class="copyright-logo" href="https://htmlacademy.ru">
-         <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Html academy logo">
+        <a class="copyright-logo" href="https://htmlacademy.ru" aria-label="Перейти на сайт HTML Академии">
+         <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML академии">
         </a>
        </div>
     </footer>

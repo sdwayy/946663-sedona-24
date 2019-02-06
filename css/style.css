@@ -1,0 +1,436 @@
+body
+{
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+
+    margin: 0 auto;
+    padding: 0;
+
+    text-transform: uppercase;
+
+    color: #000;
+    background-color: #fff;
+    box-shadow: 0 0 10px 5px #dcdcdc,
+    0 -39px 0 40px #f2f2f2;
+}
+a
+{
+    text-decoration: none;
+}
+.button
+{
+    font: inherit;
+    font-weight: bold;
+
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    color: #fff;
+    border: none;
+}
+.list
+{
+    list-style-type: none;
+}
+.index-body
+{
+    max-width: 1200px;
+}
+.hotels-body
+{
+    max-width: 1200px;
+}
+.site-navigation li
+{
+    font-weight: 700;
+
+    width: 239px;
+    height: 56px;
+}
+.site-navigation li,
+.index-container
+{
+    text-align: center;
+}
+.site-navigation a,
+.hotel-more-info
+{
+    color: #000;
+}
+.site-navigation a:hover,
+.hotel-more-info:hover
+{
+    color: #83b5d3;
+}
+.site-navigation a:active,
+.hotel-more-info:active
+{
+    color: #d1d1d1;
+}
+.site-navigation .active
+{
+    color: #776356;
+}
+.slogan,
+.advantage,
+.search-hotel,
+.hotel-label
+{
+    font-size: 21px;
+}
+.reasons-num li
+{
+    line-height: 21px;
+
+    width: 400px;
+    height: 256px;
+
+    background-color: #efefef;
+}
+.town-merits li
+{
+    line-height: 21px;
+
+    width: 400px;
+    height: 330px;
+}
+.reason:first-child,
+.reason:nth-child(2)
+{
+    color: #fff;
+    background-color: #81b3d2;
+}
+.interest
+{
+    line-height: 24px;
+}
+.interest-question
+{
+    font-size: 30px;
+    line-height: 36px;
+}
+.check-in-form
+{
+    font-weight: bold;
+}
+.check-in-form input[type=text]
+{
+    font: inherit;
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    border: none;
+    background-color: #f2f2f2;
+}
+.date-field
+{
+    width: 333px;
+    height: 38px;
+    padding-left: 13px;
+}
+.age-field
+{
+    width: 38px;
+    height: 38px;
+
+    text-align: center;
+}
+.check-in-form input[type=text]:hover
+{
+    background-color: #ececec;
+}
+.check-in-form input[type=text]:focus
+{
+    outline: 3px solid #e6e6e6;
+    background-color: #fff;
+}
+.search-hotel
+{
+    font-weight: bold;
+
+    width: 568px;
+    height: 86px;
+
+    border: none;
+    background-color: #766357;
+}
+.search-hotel:hover,
+.btn-reg:hover
+{
+    background-color: #604d41;
+}
+.search-hotel:active,
+.btn-reg:active
+{
+    color: #938b86;
+    background-color: #4f3c30;
+}
+.search-btn
+{
+    font-size: 21px;
+
+    width: 458px;
+    height: 58px;
+
+    background-color: #82b4d3;
+}
+.btn-info:hover,
+.search-btn:hover,
+.social-button a:hover
+{
+    background-color: #669fc1;
+}
+.search-btn:active,
+.social-button a:active,
+.btn-info:active
+{
+    color: #95bad3;
+    background-color: #5397be;
+}
+.btn-info
+{
+    line-height: 21px;
+
+    display: inline-block;
+
+    width: 110px;
+    height: 27px;
+
+    background-color: #81b3d2;
+}
+.btn-reg
+{
+    line-height: 21px;
+
+    display: inline-block;
+
+    width: 142px;
+    height: 27px;
+    margin-left: 2px;
+
+    background-color: #776356;
+}
+.page-footer
+{
+    height: 120px;
+
+    background-color: rgba(255, 255, 255, .5);
+}
+.hashtag
+{
+    font-size: 21px;
+    font-weight: bold;
+
+    text-transform: uppercase;
+}
+.social-num
+{
+    display: block;
+
+    width: 114px;
+    height: 49px;
+}
+.social-button
+{
+    display: inline-block;
+
+    width: 46px;
+    height: 48px;
+    margin-right: 2px;
+
+    text-align: center;
+
+    background-color: #82b4d3;
+}
+.tw-block
+{
+    margin-left: -38px;
+}
+.social-button a
+{
+    display: block;
+
+    width: inherit;
+    height: inherit;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.tw
+{
+    background-image: url(../img/twitter.svg);
+}
+.fb
+{
+    background-image: url(../img/fb-icon.svg);
+}
+.yt
+{
+    background-image: url(../img/youtube.svg);
+}
+.tw:active
+{
+    display: block;
+
+    width: inherit;
+    height: inherit;
+
+    background-image: url(../img/freq-tw.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.fb:active
+{
+    width: inherit;
+    height: inherit;
+
+    background: url(../img/freq-fb.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.yt:active
+{
+    width: inherit;
+    height: inherit;
+
+    background: url(../img/freq-yt.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.footer-copyright
+{
+    width: 200px;
+    height: 42px;
+}
+.footer-copyright b
+{
+    text-align: left;
+    text-transform: uppercase;
+}
+.footer-copyright a
+{
+    text-align: right;
+}
+.copyright-logo
+{
+    display: block;
+
+    width: 115px;
+    height: 41px;
+
+    background-image: url(../img/logo-htmlacademy.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.copyright-logo:hover
+{
+    display: block;
+
+    width: 115px;
+    height: 41px;
+
+    background-image: url(../img/blue-htmllogo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.copyright-logo:active
+{
+    display: block;
+
+    width: 115px;
+    height: 41px;
+
+    background-image: url(../img/gray-htmllogo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.rating
+{
+    line-height: 21px;
+
+    display: inline-block;
+
+    width: 110px;
+    height: 26px;
+
+    text-align: center;
+
+    color: #949494;
+    background-color: #f2f2f2;
+}
+.stars
+{
+    display: block;
+
+    height: 17px;
+
+    letter-spacing: 3px;
+
+    background-image: url(../img/star.svg);
+    background-repeat: repeat-x;
+}
+.four
+{
+    width: 73px;
+}
+.three
+{
+    width: 53px;
+}
+.two
+{
+    width: 36px;
+}
+
+/*.index-body::before {
+  content: "";
+
+  position: absolute;
+  display: block;
+
+  background-image: url(../img/index-background.jpg);
+  background-repeat: no-repeat;
+
+  top: -26px;
+
+  width: 1200px;
+  height: 800px;
+
+  z-index: 1;
+}*/
+
+/*.container::before {
+  content: "";
+
+  position: absolute;
+  display: block;
+
+  background-image: url(../img/intro-mask.svg);
+  background-repeat: no-repeat;
+
+  top: 506px;
+
+  width: 1200px;
+  height: 59px;
+
+  z-index: 2;
+}*/
+
+.visually-hidden
+{
+    position: absolute;
+
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    border: 0;
+}

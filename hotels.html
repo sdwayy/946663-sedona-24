@@ -3,18 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="hotels-body">
     <header class="page-header">
-     <nav class="main-nav">
+      <nav class="main-nav">
         <a class="header-logo" href="index.html" aria-label="Вернуться на главную страницу">
-         <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Cедоны">
+         <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Седоны">
         </a>
-        <ul class="site-navigatiom">
-          <li><a href="#">Информация</a></li>
+        <ul class="site-navigation list">
+          <li><a href="index.html">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
-          <li><a href="#">Гостиницы</a></li>
+          <li><a class="active" href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -24,7 +27,7 @@
       <form class="hotel-filter-form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
           <legend>Инфраструктура:</legend>
-          <ul>
+          <ul class="list">
             <li>
               <input type="checkbox" name="pool" id="filter-pool" checked>
               <label for="filter-pool">Бассейн</label>
@@ -41,7 +44,7 @@
         </fieldset>
         <fieldset>
           <legend>Тип жилья:</legend>
-          <ul>
+          <ul class="list">
             <li>
               <input type="checkbox" name="hotel" id="filter-hotel" checked>
               <label for="filter-hotel">Гостиница</label>
@@ -68,40 +71,41 @@
       </form>
       </section>
       <section class="hotel-list">
-        <ul class="unit-list">
+        <h2 class="visually-hidden">Результаты поиска</h2>
+        <ul class="unit-list list">
           <li>
-            <h3>Amara resort & spa</h3>
+            <h3 class="hotel-label"><a class="hotel-more-info" href="#">Amara resort & spa</a></h3>
             <img src="img/amara.jpg" width="135" height="90" alt="Гостиница Amara resort & spa">
             <span class="hotel-type">Гостиница</span>
             <span class="price">От 4000 Р.</span>
-            <a class="btn-info" href="#">Подробнее</a>
-            <a class="btn-reg" href="#">Забронировать</a>
+            <a class="btn-info button" href="#">Подробнее</a>
+            <a class="btn-reg button" href="#">Забронировать</a>
             <p class="hotel-grade">
-              <img src="img/star.svg" width="18" height="17" alt="4 звезды">
+              <span class="stars four" aria-label="4 звезды"></span>
               <span class="rating">Рейтинг: 8,5</span>
             </p>
           </li>
           <li>
-          <h3>Desert Quail inn</h3>
+          <h3 class="hotel-label"><a class="hotel-more-info" href="#">Desert Quail inn</a></h3>
             <img src="img/desert.jpg" width="135" height="90" alt="Мотель Desert Quail inn ">
             <span class="hotel-type">Мотель</span>
             <span class="price">От 3000 Р.</span>
-            <a class="btn-info" href="#">Подробнее</a>
-            <a class="btn-reg" href="#">Забронировать</a>
+            <a class="btn-info button" href="#">Подробнее</a>
+            <a class="btn-reg button" href="#">Забронировать</a>
             <p class="hotel-grade">
-              <img src="img/star.svg" width="18" height="17" alt="3 звезды">
+              <span class="stars three" aria-label="3 звезды"></span>
               <span class="rating">Рейтинг: 8,9</span>
             </p>
           </li>
           <li>
-            <h3>Villas at poco diablo</h3>
+            <h3 class="hotel-label"><a class="hotel-more-info" href="#">Villas at poco diablo</a></h3>
             <img src="img/villas.jpg" width="135" height="90" alt="Апартаменты Villas at poco diablo">
             <span class="hotel-type">Апартаменты</span>
             <span class="price">От 2000 Р.</span>
-            <a class="btn-info" href="#">Подробнее</a>
-            <a class="btn-reg" href="#">Забронировать</a>
+            <a class="btn-info button" href="#">Подробнее</a>
+            <a class="btn-reg button" href="#">Забронировать</a>
             <p class="hotel-grade">
-              <img src="img/star.svg" width="18" height="17" alt="2 звезды">
+              <span class="stars two" aria-label="2 звезды"></span>
               <span class="rating">Рейтинг: 9,2</span>
             </p>
           </li>
@@ -110,29 +114,23 @@
     </main>
     <footer class="page-footer">
       <span class="hashtag">#Visitsedona</span>
-      <div class="footer-social">
-        <ul>
-         <li>
-            <a class="social-button" href="#">
-              <img src="img/twitter.svg" width="17" height="15" alt="Наш аккаунт в Твиттере">
-           </a>
+        <ul class="social-num list">
+         <li class="social-button tw-block">
+          <a class="tw" href="#" aria-label="Наш аккаунт в Твиттере">
+          </a>
          </li>
-          <li>
-            <a class="social-button" href="#">
-              <img src="img/fb-icon.svg" width="12" height="22" alt="Мы в Фейсбуке">
+          <li class="social-button">
+            <a class="fb" href="#" aria-label="Мы в Фейсбуке">
             </a>
           </li>
-          <li>
-            <a class="social-button" href="#">
-              <img src="img/youtube.svg" width="20" height="16" alt="Наш канал на Ютубе">
+          <li class="social-button">
+            <a class="yt" href="#" aria-label="Наш канал на Ютубе">
             </a>
           </li>
        </ul>
-      </div>
        <div class="footer-copyright">
         <b>Website by</b>
         <a class="copyright-logo" href="https://htmlacademy.ru" aria-label="Перейти на сайт HTML Академии">
-         <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML академии">
         </a>
        </div>
     </footer>

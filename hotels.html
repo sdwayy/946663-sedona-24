@@ -10,14 +10,16 @@
   <body class="hotels-body">
     <header class="page-header">
       <nav class="main-nav">
-        <a class="header-logo" href="index.html" aria-label="Вернуться на главную страницу">
-         <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Седоны">
-        </a>
         <ul class="site-navigation list">
-          <li><a href="index.html">Информация</a></li>
+          <li><a class="active" href="index.html">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
-          <li><a class="active" href="hotels.html">Гостиницы</a></li>
+          <li><a href="hotels.html">Гостиницы</a></li>
+          <li class="header-logo">
+            <a href="index.html" aria-label="Вернуться на главную страницу">
+         <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Седоны">
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -25,7 +27,7 @@
       <section class="hotel-filter">
       <h1 class="visually-hidden">Выбор гостиницы</h1>
       <form class="hotel-filter-form" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset>
+        <fieldset class="fieldset-infra">
           <legend>Инфраструктура:</legend>
           <ul class="list">
             <li>
@@ -42,7 +44,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="fieldset-type">
           <legend>Тип жилья:</legend>
           <ul class="list">
             <li>
@@ -59,52 +61,83 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="fieldset-price">
           <legend>Стоимость в сутки (р):</legend>
             <label for="p-range">
                 <span>от 0</span>
                 <span>до 3000</span>
             </label>
+            <br>
           <input type="range" name="price-range" id="p-range" min="0" max="3000" value="2500">
         </fieldset>
-        <button type="submit">Показать</button>
+        <button class="filter-submit button" type="submit">Показать</button>
       </form>
       </section>
       <section class="hotel-list">
         <h2 class="visually-hidden">Результаты поиска</h2>
         <ul class="unit-list list">
           <li>
-            <h3 class="hotel-label"><a class="hotel-more-info" href="#">Amara resort & spa</a></h3>
-            <img src="img/amara.jpg" width="135" height="90" alt="Гостиница Amara resort & spa">
-            <span class="hotel-type">Гостиница</span>
-            <span class="price">От 4000 Р.</span>
-            <a class="btn-info button" href="#">Подробнее</a>
-            <a class="btn-reg button" href="#">Забронировать</a>
+            <div class="unit-descrip-block">
+              <img src="img/amara.jpg" width="135" height="90" alt="Гостиница Amara resort & spa">
+              <div class="unit-descrip">
+                <h3 class="hotel-label">
+                  <a class="hotel-more-info" href="#">
+                    Amara resort & spa
+                  </a>
+                </h3>
+                <p class="unit-tp">
+                  <span class="hotel-type">Гостиница</span>
+                  <span class="price">От 4000 Р.</span>
+                </p>
+                <a class="btn-info button" href="#">Подробнее</a>
+                <a class="btn-reg button" href="#">Забронировать</a>
+              </div>
+            </div>
             <p class="hotel-grade">
               <span class="stars four" aria-label="4 звезды"></span>
               <span class="rating">Рейтинг: 8,5</span>
             </p>
           </li>
           <li>
-          <h3 class="hotel-label"><a class="hotel-more-info" href="#">Desert Quail inn</a></h3>
-            <img src="img/desert.jpg" width="135" height="90" alt="Мотель Desert Quail inn ">
-            <span class="hotel-type">Мотель</span>
-            <span class="price">От 3000 Р.</span>
-            <a class="btn-info button" href="#">Подробнее</a>
-            <a class="btn-reg button" href="#">Забронировать</a>
+            <div class="unit-descrip-block">
+              <img src="img/desert.jpg" width="135" height="90" alt="Мотель Desert Quail inn ">
+            <div class="unit-descrip">
+              <h3 class="hotel-label">
+                <a class="hotel-more-info" href="#" >
+                Desert Quail inn
+                </a>
+              </h3>
+              <p class="unit-tp">
+                <span class="hotel-type">Мотель</span>
+                <span class="price">От 3000 Р.</span>
+              </p>
+              <a class="btn-info button" href="#">Подробнее</a>
+              <a class="btn-reg button" href="#">Забронировать</a>
+            </div>
+          </div>
             <p class="hotel-grade">
               <span class="stars three" aria-label="3 звезды"></span>
               <span class="rating">Рейтинг: 8,9</span>
             </p>
           </li>
           <li>
-            <h3 class="hotel-label"><a class="hotel-more-info" href="#">Villas at poco diablo</a></h3>
-            <img src="img/villas.jpg" width="135" height="90" alt="Апартаменты Villas at poco diablo">
-            <span class="hotel-type">Апартаменты</span>
-            <span class="price">От 2000 Р.</span>
-            <a class="btn-info button" href="#">Подробнее</a>
-            <a class="btn-reg button" href="#">Забронировать</a>
-            <p class="hotel-grade">
+            <div class="unit-descrip-block">
+              <img src="img/villas.jpg" width="135" height="90" alt="Апартаменты Villas at poco diablo">
+              <div class="unit-descrip">
+               <h3 class="hotel-label">
+                <a class="hotel-more-info" href="#" >
+                Villas at poco diablo
+                </a>
+               </h3>
+               <p class="unit-tp">
+                <span class="hotel-type">Апартаменты</span>
+                <span class="price">От 2000 Р.</span>
+               </p>
+               <a class="btn-info button" href="#">Подробнее</a>
+               <a class="btn-reg button" href="#">Забронировать</a>
+            </div>
+           </div>
+              <p class="hotel-grade">
               <span class="stars two" aria-label="2 звезды"></span>
               <span class="rating">Рейтинг: 9,2</span>
             </p>

@@ -216,7 +216,7 @@ a
     width: 489px;
     margin: 0;
     margin-left: 355px;
-    padding: 0;
+    padding: 1;
 }
 .reasons-num
 {
@@ -245,13 +245,20 @@ a
 }
 .reasons-num h3
 {
-    margin-bottom: 25px;
+    padding: 20px 60px;
+    margin: 0;
+    margin-bottom: 3px;
+    box-sizing: border-box;
 }
 .reasons-num span
 {
     display: block;
-
-    margin-bottom: 20px;
+    padding: 1px;
+}
+.reasons-num p
+{
+    margin:0;
+    padding: 20px 1px;
 }
 .reasons-num li:nth-child(6)
 {
@@ -262,7 +269,7 @@ a
 .reasons-num .second-reason
 {
     display: flex;
-
+    position: relative;
     width: 1200px;
 
     color: #fff;
@@ -274,39 +281,17 @@ a
 {
     flex-direction: row-reverse;
 }
-.first-r-liner
+.reasons-num .first-r-liner
 {
-    position: relative;
-    left: 50px;
-
     box-sizing: border-box;
-    width: 303px;
-    min-height: 146px;
-    padding-top: 26px;
+    width: 400px;
+    padding: 26px 50px;
 }
-.second-i::after
+.first-reason::after
 {
     position: absolute;
     top: 0;
-    right: 350px;
-
-    width: 800px;
-    height: 256px;
-
-    content: '';
-
-    background-image: url(../img/index-devil-bridge.jpg);
-    background-repeat: no-repeat;
-}
-.first-reason
-{
-    padding-left: 51px;
-}
-.first-i::after
-{
-    position: absolute;
-    top: 0;
-    left: 349px;
+    left: 400px;
 
     width: 800px;
     height: 256px;
@@ -316,9 +301,34 @@ a
     background-image: url(../img/index-town-photo.jpg);
     background-repeat: no-repeat;
 }
-.reasons-num .second-reason
+.second-reason::after
 {
-    padding-right: 100px;
+    position: absolute;
+    top: 0;
+    right: 400px;
+
+    width: 800px;
+    height: 256px;
+
+    content: '';
+
+    background-image: url(../img/index-devil-bridge.jpg);
+    background-repeat: no-repeat;
+}
+.reasons-num .second-r-liner
+{
+    box-sizing: border-box;
+    width: 400px;
+    padding: 26px 40px;
+
+}
+.reasons-num .other-reasons
+{
+    padding: 27px 68px;
+}
+.other-reasons:nth-of-type(5)
+{
+    padding-left: 70px;
 }
 .town-merits
 {
@@ -347,14 +357,6 @@ a
     min-height: 84px;
     padding-top: 98px;
 }
-.second-r-liner
-{
-    box-sizing: border-box;
-    width: 261px;
-    min-height: 143px;
-    margin-left: 68px;
-    padding-top: 27px;
-}
 .reasons-num li:first-child
 {
     order: -2;
@@ -365,7 +367,9 @@ a
 }
 .town-merits h4
 {
-    margin-bottom: 24px;
+    padding: 1px;
+    margin-top: 28px;
+    margin-bottom: 4px;
 }
 .housing::before
 {
@@ -416,7 +420,7 @@ a
 .interest
 {
     line-height: 24px;
-
+    padding: 1px;
     min-height: 96px;
     margin: 0 auto;
     margin-bottom: 47px;
@@ -442,10 +446,26 @@ a
     border: none;
     background-color: #766357;
 }
-.map-i
+.map-container
 {
     position: relative;
+    width: 100%;
+    min-height: 593px;
+    background-color: red;
+}
+.map-i
+{
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: 1;
+}
+.inter-map
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
 .form-liner
 {
@@ -455,7 +475,7 @@ a
 {
     display: none;
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     top: 86px;
     left: 316px;
 
@@ -491,7 +511,7 @@ a
     font-weight: inherit;
 
     position: relative;
-    z-index: 2;
+    z-index: 3;
 
     box-sizing: border-box;
 
@@ -736,7 +756,7 @@ a
 .page-footer
 {
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     bottom: 0;
     left: 0;
 
@@ -797,7 +817,7 @@ a
 {
     position: relative;
     left: 3px;
-
+    font-weight: 400;
     display: block;
 
     text-transform: uppercase;
@@ -854,7 +874,7 @@ a
 
     box-sizing: border-box;
     min-height: 160px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 
     color: #fff;
 
@@ -1205,7 +1225,7 @@ a
 }
 .unit-list li:last-child
 {
-    border-bottom: 1px solid #e6e6e6;
+    border-bottom: 2px solid #e6e6e6;
 }
 .unit-descrip-block
 {
@@ -1228,9 +1248,17 @@ a
 {
     margin-top: -7px;
 }
-.unit-tp .price
+.unit-tp .amara-price
 {
     margin-left: 37px;
+}
+.unit-tp .desert-price
+{
+    margin-left: 62px;
+}
+.unit-tp .villas-price
+{
+    margin-left: 20px;
 }
 .unit-descrip
 {
@@ -1256,21 +1284,20 @@ a
     box-sizing: border-box;
     padding: 4px 4px;
 }
-.stars
+.stars-container
 {
     display: flex;
     flex-direction: column;
-
-    min-width: 18px;
-    min-height: 17px;
-    margin: 0;
+    justify-content: space-between;
 }
-.stars-i
+.stars
 {
     display: flex;
     flex-direction: row-reverse;
 
-    margin-bottom: 48px;
+    min-width: 18px;
+    min-height: 17px;
+    margin: 0;
 }
 .stars img
 {
@@ -1281,9 +1308,10 @@ a
     display: block;
 
     width: 110px;
-    height: 27px;
-
-    text-align: center;
+    min-height: 27px;
+    padding-left: 15px;
+    padding-top: 3px;
+    box-sizing: border-box;
 
     color: #949494;
     background-color: #f2f2f2;
